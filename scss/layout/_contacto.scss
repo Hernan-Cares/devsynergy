@@ -1,0 +1,21 @@
+.contenedor__contacto{
+    width: 50%;
+    padding: 25px;
+    margin-bottom: 80px;
+}
+
+.boton-contacto{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer {
+    padding: 1px;
+    background-color: $footerContactoBackGroundColor;
+    color: $footerContactoColor;
+}
+
+footer p{
+    padding: 20px;
+    text-align: center;    
+}

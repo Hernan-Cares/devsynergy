@@ -1,0 +1,63 @@
+.box-portafolio {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid $boxPortafolioBorderColor;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    div {
+        z-index: 3;
+        border-radius: 14px;
+        color: $divColor;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: grid;
+        place-items: end start;
+        border: 1px solid $divBorderColor;
+
+        h2 {
+            border-bottom: 1px solid $divH2BorderColor;
+            margin-bottom: 25px;
+        }
+
+    }
+
+}
+
+.b1-portafolio {
+    grid-area: a1;
+ }
+   
+ .b2-portafolio {
+    grid-area: a2;
+ }
+   
+ .b3-portafolio {
+    grid-area: a3;
+ }
+   
+ .b4-portafolio {
+   grid-area: a4;
+ }
+ 
+ .grid-portafolio {
+     padding: 15px;
+     display: grid;
+     gap: 15px;
+     place-items: end center;
+     grid-template-areas:
+       'a1'
+       'a2'
+       'a3'
+       'a4';
+ }

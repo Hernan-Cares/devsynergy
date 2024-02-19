@@ -1,250 +1,220 @@
-/*Fuente*/
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-
-/*Reseteo*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} 
-
-body {
-    font-family: 'JetBrains Mono', monospace;
-    
+@charset "UTF-8";
+/*Variables de la página index*/
+/*Variables página Servicio*/
+/*Variables página portafolio*/
+/*Variables página contactos*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.header__contacto{
-    margin: 0px;
-    background-color:#DCF2F1;    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end ;
+footer {
+  padding: 1px;
+  background-color: #0F1035;
+  color: white;
 }
 
-
-.header__contacto p{
-    padding: 10px;
-    display: inline-block;
+.header__contacto {
+  margin: 0px;
+  background-color: #DCF2F1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header__contacto p {
+  padding: 10px;
+  display: inline-block;
 }
 
-.logo img{
-    height: 60px;
+.logo img {
+  height: 60px;
 }
 
-/*index*/
-.contenedor{
-    padding: 1px;
-    background-image: url(../assets/imagenes/imagen-principal-4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 627px;
-    text-align: right;    
+.contenedor {
+  padding: 1px;
+  background-image: url("../assets/imagenes/imagen-principal-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 627px;
+  text-align: right;
 }
 
-.container p{
-    color: #0F1035;
-    font-weight: bold;
-    font-size:  3rem;
-    
+.container p {
+  color: #0F1035;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-h1{
-    color: #0F1035;
-    font-weight: bold;
-    font-size:  3rem;
-    
+h1 {
+  color: #0F1035;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .contacto {
-    padding: 10px;
-    background-color: #365486;
-    color: white;
+  padding: 10px;
+  background-color: #365486;
+  color: white;
 }
-
-
-/*empresa*/
 
 .box-img {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 
-
-
-/*servicio*/
 .box {
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 15px;
-    border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid white;
 }
-
-  
 .box div {
-    z-index: 3;
-    border-radius: 14px;
-    color: black;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: grid;
-    place-items: end start;
-    border: 1px solid #365486;
-  }
-  .box div h2 {
-    border-bottom: 1px solid #365486;
-    margin-bottom: 25px;
-  }
-  
-
+  z-index: 3;
+  border-radius: 14px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  place-items: end start;
+  border: 1px solid #365486;
+}
+.box div h2 {
+  border-bottom: 1px solid #365486;
+  margin-bottom: 25px;
+}
 
 .b1 {
-   grid-area: a1;
+  grid-area: a1;
 }
-  
+
 .b2 {
-   grid-area: a2;
+  grid-area: a2;
 }
-  
+
 .b3 {
-   grid-area: a3;
+  grid-area: a3;
 }
-  
+
 .b4 {
   grid-area: a4;
 }
 
 .grid {
-    padding: 15px;
-    display: grid;
-    gap: 15px;
-    place-items: end center;
-    grid-template-areas:
-      'a1 a2'
-      'a3 a4';
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+  place-items: end center;
+  grid-template-areas: "a1 a2" "a3 a4";
 }
 
-/*Portafolio*/
 .box-portafolio {
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 15px;
-    border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid white;
 }
-
 .box-portafolio img {
-    width: 100%;
-    height: auto;
-    
-  }
-  
+  width: 100%;
+  height: auto;
+}
 .box-portafolio div {
-    z-index: 3;
-    border-radius: 14px;
-    color: black;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: grid;
-    place-items: end start;
-    border: 1px solid #365486;
-  }
-  .box-portafolio div h2 {
-    border-bottom: 1px solid #365486;
-    margin-bottom: 25px;
-  }
-  
-
+  z-index: 3;
+  border-radius: 14px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  place-items: end start;
+  border: 1px solid #365486;
+}
+.box-portafolio div h2 {
+  border-bottom: 1px solid #365486;
+  margin-bottom: 25px;
+}
 
 .b1-portafolio {
-   grid-area: a1;
+  grid-area: a1;
 }
-  
+
 .b2-portafolio {
-   grid-area: a2;
+  grid-area: a2;
 }
-  
+
 .b3-portafolio {
-   grid-area: a3;
+  grid-area: a3;
 }
-  
+
 .b4-portafolio {
   grid-area: a4;
 }
 
 .grid-portafolio {
-    padding: 15px;
-    display: grid;
-    gap: 15px;
-    place-items: end center;
-    grid-template-areas:
-      'a1'
-      'a2'
-      'a3'
-      'a4';
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+  place-items: end center;
+  grid-template-areas: "a1" "a2" "a3" "a4";
 }
 
+.contenedor__contacto {
+  width: 50%;
+  padding: 25px;
+  margin-bottom: 80px;
+}
+
+.boton-contacto {
+  margin-top: 20px;
+  padding: 10px;
+}
 
 footer {
-    padding: 1px;
-    background-color: #0F1035;
-    color: white;
+  padding: 1px;
+  background-color: #0F1035;
+  color: white;
 }
 
-footer p{
-    padding: 20px;
-    text-align: center;    
+footer p {
+  padding: 20px;
+  text-align: center;
 }
 
-/*Contacto*/
-
-.contenedor__contacto{
-    width: 50%;
-    padding: 25px;
-
+@media (max-width: 486px) {
+  .header__contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 5px;
+  }
+  .contenedor {
+    text-align: center;
+  }
+  .movilEmpresa {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: justify;
+  }
+  .contenedor__contacto {
+    width: 100%;
+  }
 }
 
-.boton-contacto{
-    margin-top: 20px;
-    padding: 10px;
-}
-
-
-@media(max-width:486px){
-    .header__contacto{
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 5px;
-        
-    }
-
-    .contenedor{
-        text-align: center;    
-    }
-
-    .movilEmpresa{
-        margin: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        text-align: justify;
-    }    
-
-    .contenedor__contacto{
-        width: 100%;
-    }
-}
+/*# sourceMappingURL=style.css.map */
